@@ -62,10 +62,8 @@ const caesarModule = (function () {
       }
     });
 
-    if (encode) {
-      const encodedMessage = shiftMessage.map(convertNumToLetter);
-      return encodedMessage.join("");
-    }
+    const decodedMessage = shiftMessage.map(convertNumToLetter);
+      return decodedMessage.join("");
     
   }
 
